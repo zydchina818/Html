@@ -5,10 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /*
+            将UL里面的第一个LI设置成红色
+            伪类（不存在的类，特殊的类）
+                描述一个元素的特殊状态
+                    比如：第一个子元素，被点击的元素，鼠标移入的元素。。。
+                    伪类一般情况下以：开头
+                        :first-child 第一个子元素
+                        :last-child 最后一个子元素
+                        :nth-child()选中第N个元素
+                            特殊值n  第n个，或者0到正无穷
+                            2n 表示选中偶数位的元素
+                            odd表示奇数 even表示偶数
+        以上这些伪类都是根据所有的子元素进行排序
+
+        :first-of-type
+        :last-of-type
+        :nth-of-type()
+            这几个伪类的功能和上述的类似，不通点是他们同类型中进行排序
+
+            :not()否定伪类（将符合条件的元素从选择器中去除
+        */
+
+        ul > li:not(:nth-child(3)){
+            color:red;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>This is a</h1>
+  <ul>
+      <span>我是一个span</span>
+      <li>第一个</li>
+      <li>第二个</li>
+      <li>第三个</li>
+      <li>第四个</li>
+      <li>第五个</li>
+  </ul>
 </body>
 
 </html>

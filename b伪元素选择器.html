@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 20px;
+        }
+        /*
+            :first-letter 表示第一个字母
+        */
+        p::first-letter{
+            font-size:50px;
+            color:red;
+        }
+
+       p::first-line{
+           background-color: yellow;
+       } 
+       p::selection{
+           background-color: greenyellow;
+        }
+        div::after{
+            content:'haha';
+            color:red;
+        }
+        div::before{
+            content:'abc';
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <div>Hello Hello How are you</div>
+    <p>
+        Lorem ipsum dofdsaa fdsjiop  fdfdsafds 
+        fdsafdsafdjk  fdsafdsa fdsafdsjkl;
+        kj.Atque velit modi!
+    </p>
+</body>
+</html>
