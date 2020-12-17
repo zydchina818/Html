@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            将所有的段落设置成红色（字体）
+            例子：p{} h1{} div{}
+        */
+        /*p {
+            color: tomato;
+            font-size: 30px;
+        }
+        
+        h1 {
+            color: green
+        }*/
+        /* 
+            将儿童相见不相识设置成红色
+        */
+        /* id选择器：(id不能重复，考虑到JS中的ID唯一性)
+                作用：根据元素的ID属性值选中一个元素
+                语法：#id属性值{}
+                例子：#box{} #red{}
+        */
+        /* #red {
+            color: red;
+        } */
+        /* 
+            将秋水。。。。和落霞。。。设置成蓝色
+            class是一个标签的属性， 它和ID选择器类似，不同
+            的是 class 可以重复使用
+            类选择器
+                作用：根据元素的class属性值选中一组元素
+                语法： .class属性值
+        */
+        
+        .blue {
+            color: green;
+        }
+        
+        .abc {
+            font-size: 60px;
+        }
+        /* 
+            通配选择器
+                作用：选中页面中的所有元素
+                语法：*
+        */
+        
+        * {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>我是一级标题！</h1>
+    <P>少小离家才能大回</P>
+    <P id="red">乡音无改髦毛衰</P>
+    <P id="red">儿童相见不相识</P>
+    <P>笑问客从何处来</P>
+    <P class="blue abc">秋水共长天一色</P>
+    <P class="blue">落霞与孤鹫齐飞</P>
+</body>
+
+</html>
