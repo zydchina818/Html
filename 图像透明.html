@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            opacity:0.4;
+            filter:alpha(opacity=40); /* 适用IE8及更早版本*/
+        }
+
+        img:hover{
+            opacity:1.0;
+            filter:alpha(opacity=100); /* 适用IE8及更早版本*/        }
+    </style>
+</head>
+<body>
+    <h1>图片透明度</h1>
+    <p>opacity 属性通常与:hover选择器一起使用，
+        在鼠标移动图片上，图像变清晰，否则模糊
+    </p>
+
+    <img src="klematis.jpg" alt="klematis" width="150" height="113">
+    <img src="klematis2.jpg" alt="klematis2" width="150" height="113">
+
+    <p><b>必须在IE8以上的浏览器版本中，才能保证：hover选择器正常使用</b></p>
+</body>
+</html>

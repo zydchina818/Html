@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: #bfa;
+        }
+
+        div span{
+            background-color: red;
+        }
+
+        /* div+p{
+            background-color:yellow;
+        } */
+
+        div~p{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>这是div中的一个P元素</p>
+        <span>这是div中的span元素</span>
+    </div>
+    <p>位于div元素后的第一个p元素！</p>
+    <p>位于div元素后的第二个p元素！</p>
+    <span>位于div元素后的第三个span元素！</span>
+</body>
+</html>
